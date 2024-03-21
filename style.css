@@ -1,0 +1,255 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --Moderate-violet: hsl(263, 55%, 52%);
+    --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+    --white-light: hsla(0, 0%, 100%, 0.5);
+    --Light-gray: hsl(0, 0%, 81%);
+    --Light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--Light-grayish-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+article {
+    display: grid;
+    grid-template-areas: 
+        "daniel daniel jonathan kira"
+        "jeanette patrick patrick kira";
+    width: auto;
+    height: 510px; 
+    gap: 22px 22px;
+    font-family: 'Barlow Semi Condensed', sans-serif; 
+    font-weight: 500;  
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1050px) {
+    body {
+        overflow:auto;
+        height: 100%;
+    }
+    article {
+        grid-template-areas: 
+        "daniel"
+        "daniel"
+        "jonathan"
+        "jeanette"
+        "patrick"
+        "patrick"
+        "kira"
+        "kira";
+        height: auto;
+        width: auto;   
+    }
+    section{
+        width: 280px;
+    }
+}
+
+section {
+    padding: 25px;
+    border-radius: 10px;
+    margin: 0;
+    box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.51);    
+}
+
+.daniel {
+    grid-area: daniel;
+    max-width: 500px;
+    height: auto;
+    overflow: hidden;
+    background-color: var(--Moderate-violet);
+}
+
+.jonathan {
+    grid-area: jonathan;
+    width: 280px;
+    height: 100%;
+    overflow: hidden;
+    background-color: var(--Very-dark-grayish-blue);
+}
+
+.jeanette {
+    grid-area: jeanette;
+    width: 280px;
+    height: 100%;
+    overflow: hidden;
+    background-color: var(--White);
+}
+
+.patrick {
+    grid-area: patrick;
+    max-width: 500px;
+    height: 100%;
+    overflow: hidden;    
+    background-color: var(--Very-dark-blackish-blue);
+}
+
+.kira {
+    grid-area: kira;
+    width: 280px;
+    height: 100%;
+    background-color: var(--White);
+}
+
+.picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.info {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin: 0;
+}
+
+.personal-info {
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+}
+
+.daniel h3 {
+    margin: 0;
+    color: var(--Light-grayish-blue);
+}
+
+.daniel span {
+    margin: 0;
+    color: var(--Light-grayish-blue);
+    opacity: 50%;
+}
+
+.daniel p {
+    color: var(--Light-grayish-blue);
+    opacity: 70%;
+    font-size: 500;
+    font-size: 0.8rem;
+}
+
+.daniel h2 {
+    font-size: 17px;
+    color: var(--Light-grayish-blue);    
+}
+
+.jonathan h3 {
+    margin: 0;
+    color: var(--Light-grayish-blue);
+}
+
+.jonathan span {
+    margin: 0;
+    color: var(--Light-grayish-blue);
+    opacity: 50%;
+}
+
+.jonathan p {
+    color: var(--Light-grayish-blue);
+    opacity: 70%;
+    font-size: 500;
+    font-size: 0.8rem;
+}
+
+.jonathan h2 {
+    font-size: 17px;
+    color: var(--Light-grayish-blue);  
+
+}
+
+.patrick h3 {
+    margin: 0;
+    color: var(--Light-grayish-blue);
+}
+
+.patrick span {
+    margin: 0;
+    color: var(--Light-grayish-blue);
+    opacity: 50%;
+}
+
+.patrick p {
+    color: var(--Light-grayish-blue);
+    opacity: 70%;
+    font-size: 500;
+    font-size: 0.8rem;
+}
+
+.patrick h2 {
+    font-size: 17px;
+    color: var(--Light-grayish-blue);    
+}
+
+.jeanette h3 {
+    margin: 0;
+    color: var(--Very-dark-grayish-blue);
+}
+
+.jeanette span {
+    margin: 0;
+    color: var(--Very-dark-grayish-blue);
+    opacity: 50%;
+}
+
+.jeanette p {
+    color: var(--Very-dark-grayish-blue);
+    opacity: 70%;
+    font-size: 500;
+    font-size: 0.8rem;
+}
+
+.jeanette h2 {
+    font-size: 17px;
+    color: var(--Very-dark-grayish-blue);    
+}
+
+.kira h3 {
+    margin: 0;
+    color: var(--Very-dark-grayish-blue);
+}
+
+.kira span {
+    margin: 0;
+    color: var(--Very-dark-grayish-blue);
+    opacity: 50%;
+}
+
+.kira p {
+    color: var(--Very-dark-grayish-blue);
+    opacity: 70%;
+    font-size: 500;
+    font-size: 0.8rem;
+}
+
+.kira h2 {
+    font-size: 17px;
+    color: var(--Very-dark-grayish-blue);    
+}
+
+.dani {
+    border: 2px solid var(--Light-grayish-blue);
+}
+
+.jona {
+    border: 2px solid var(--Very-dark-grayish-blue);
+}
+
+.pat {
+    border: 2px solid var(--Moderate-violet);
+}
+
